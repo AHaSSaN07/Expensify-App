@@ -7,10 +7,10 @@ import 'react-dates/lib/css/_datepicker.css'
 class ExpenseListFilters extends React.Component {
 
     state = {
-        calenderFoucesd : null
+        calenderFoucesd: null
     }
 
-    onDatesChange = ({startDate,endDate})=>{
+    onDatesChange = ({ startDate, endDate }) => {
         this.props.dispatch(SetStartDate(startDate));
         this.props.dispatch(SetEndDate(endDate));
     }
@@ -40,26 +40,26 @@ class ExpenseListFilters extends React.Component {
                 <DateRangePicker
                     startDate={this.props.Filter.startDate}
                     endDate={this.props.Filter.endDate}
-                    onDatesChange = {this.onDatesChange}
-                    focusedInput = {this.state.calenderFoucesd}
+                    onDatesChange={this.onDatesChange}
+                    focusedInput={this.state.calenderFoucesd}
                     onFocusChange={calenderFoucesd => this.setState({ calenderFoucesd })}
                     numberOfMonths={1}
                     isOutsideRange={() => false}
-                    showClearDates = {true  }
+                    showClearDates={true}
                 ></DateRangePicker>
-
+                
             </div >
-        )
-    }
-
-}
-
+                )
+            }
+        
+        }
+        
 const MapStateToProps = (state) => {
     return {
-        Filter: state.filters,
-
-    }
-}
-
-
+                    Filter: state.filters,
+        
+            }
+        }
+        
+        
 export default connect(MapStateToProps)(ExpenseListFilters);

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Expenseitem from './ExpenseListItem';
 import GetVisableExpenses from '../selectores/expenses';
-
+import GetExpensesAmount from '../selectores/expensesAmount';
 //component itself 
 const ExpenseList = (props) => (
     <div>
@@ -13,6 +13,7 @@ const ExpenseList = (props) => (
                 <div>
                     <h1>Expense :{index + 1} </h1>
                     <Expenseitem {...expense} index={index} />
+                    
                 </div>
             )
         })}
@@ -22,7 +23,8 @@ const ExpenseList = (props) => (
 
 const MapStateToProps = (state) => {
     return {
-        expenses: GetVisableExpenses(state.expenses, state.filters)
+        expenses: GetVisableExpenses(state.expenses, state.filters),
+        
     }
 }
 // component connected to store
