@@ -1,8 +1,9 @@
 
 import React, { Component } from 'react';
 import {Link } from 'react-router-dom'
-
-const Expenseitem = ({ dispatch, id, description, amount }) => {
+import moment from 'moment';
+import numeral from 'numeral';
+const Expenseitem = ({ dispatch, id, description, amount ,createdAt}) => {
 
     return (
         <div>
@@ -10,7 +11,8 @@ const Expenseitem = ({ dispatch, id, description, amount }) => {
             Describtion : {description}
             </Link>
             <br></br>
-            amount : {amount}
+            amount : {numeral(amount/100).format('$0,0.00')}
+            created at : {moment(createdAt).format('MMMM Do, YYYY')}
         </div>
     )
 }
