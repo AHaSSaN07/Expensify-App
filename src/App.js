@@ -18,7 +18,6 @@ store.dispatch(sortByAmount());
 
 
 
-// // "node scripts/test.js --env=jsdom"
 
 class App extends Component {
 
