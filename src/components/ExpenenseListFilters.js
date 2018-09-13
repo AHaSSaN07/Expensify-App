@@ -47,19 +47,19 @@ class ExpenseListFilters extends React.Component {
                     isOutsideRange={() => false}
                     showClearDates={true}
                 ></DateRangePicker>
-                
+
             </div >
-                )
-            }
-        
-        }
-        
+        )
+    }
+
+}
+
 const MapStateToProps = (state) => {
     return {
-                    Filter: state.filters,
-        
-            }
-        }
-        
-        
+        Filter: state.filters,
+
+    }
+}
+
+
 export default connect(MapStateToProps)(ExpenseListFilters);
