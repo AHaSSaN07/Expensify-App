@@ -6,7 +6,7 @@ import 'react-dates/lib/css/_datepicker.css'
 
 class ExpenseForm extends React.Component {
     state = {
-        description: this.props.expense ? this.props.expense.description : "lol",
+        description: this.props.expense ? this.props.expense.description : "",
         note: this.props.expense ? this.props.expense.note : "",
         amount: this.props.expense ? (this.props.expense.amount / 100).toString() : '',
         focused: false,
@@ -92,7 +92,7 @@ class ExpenseForm extends React.Component {
                         onChange={this.onNoteChange}
                     >
                     </textarea>
-                    <button>Add Expense</button>
+                    <button>{this.state.description?"Edit Expense":"Add Expense"}</button>
                 </form>
 
             </div>
