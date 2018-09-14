@@ -11,7 +11,6 @@ const ExpenseDashBoard = () => (
         <ExpenseListFilters></ExpenseListFilters>
         <TotalAmount></TotalAmount>
         <ConnectedExpenseList></ConnectedExpenseList>
-
     </h1>
 );
 
