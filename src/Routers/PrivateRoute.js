@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { router, fastest } from "sw-toolbox";
+//import { router, fastest } from "sw-toolbox";
 import Header from './../components/Header';
 
 
@@ -10,7 +10,7 @@ const PrivateRoute = ({ isAuth, component: Component, ...rest }) => (
         
         return isAuth ? (
            <div>
-               <Header></Header>
+               <Header ></Header>
                 <Component {...props}></Component> 
                 
            </div>

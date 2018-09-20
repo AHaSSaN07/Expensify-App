@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { startLogin } from '../actions/auth';
 import { connect } from "react-redux";
 
@@ -6,11 +6,12 @@ import { connect } from "react-redux";
 
 
 const Login = (props) => (
-    <div>
-        <h1>
-            Login Page
-        </h1>
-        <button onClick = {props.startLogin}>Login</button>
+    <div className="box_layout">
+        <div className ="white-box">
+            <h1 className = "title">Expensify</h1>
+            <p>please log in to continue.</p>
+            <button onClick={props.startLogin} className = "button">Login with Google</button>
+        </div>
     </div>
 )
 
@@ -21,4 +22,4 @@ const mapdispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(undefined,mapdispatchToProps)(Login);
+export default connect(undefined, mapdispatchToProps)(Login);

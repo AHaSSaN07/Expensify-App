@@ -6,7 +6,9 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
+.linkig{
+  font: bold;
+}
 .App-header {
   background-color: #222;
   height: 150px;

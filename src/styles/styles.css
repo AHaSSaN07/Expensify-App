@@ -1,0 +1,62 @@
+@import './components/_box_layout.css';
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.total-panel {
+    padding: 70px;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+.total-panel2{
+    padding: 40px;
+    background-color: #F7F7F7;
+    text-align: center;
+    font-family : Arial, Helvetica, sans-serif
+}
+
+.select {
+    border: 1px solid #cacccd;
+    height: 50px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 1.2rem;
+}
+
+.content-container {
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    max-width: 50rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.2rem;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+}
+
+.input-group__item {
+    margin-bottom: 1.2rem;
+    margin: 0 1.2rem 0 0;
+}
+
+.fix{ 
+    height: 150px;  
+
+}
+.div-wrapper{
+    width: 70%;
+}
+
+
+.loadingPage{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 15%
+}

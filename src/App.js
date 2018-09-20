@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { configStore } from './store/configStore';
 import AppRoute from './Routers/AppRouters.js';
-import { startSetExpenses } from './actions/expenses';
-import { SetStartDate, sortByAmount, SetTextFilter } from './actions/filters';
-import GetVisableExpenses from './selectores/expenses';
 import { Provider } from 'react-redux';
-import './firebase/firebase'
-
+import './firebase/firebase';
+import './styles/styles.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 export const store = configStore();
 
 
